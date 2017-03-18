@@ -1,0 +1,12 @@
+.idea/
+settings.gradle
+local.properties
+gradlew.bat
+gradlew
+.gradle/
+build/
+build.gradle
+gradle.properties
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+UpdataDemo.iml
