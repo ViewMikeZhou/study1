@@ -1,6 +1,7 @@
 package updatademo.hengda.com.updatademo;
 
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
@@ -43,8 +44,12 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         new UpdataDialog(this).setDownloadUrl(url).setTitle("更新包")
+                    .setFilePath(Environment.getExternalStorageDirectory().getAbsolutePath())
+                    .setAppName("恒达app")
+                    .setFileName("hengda")
                     .setShowProgress(true)
-                    .setIconResId(R.drawable.ic_dashboard_black_24dp).show();
+                    .setIconResId(R.mipmap.ic_launcher).show();
+
     }
 
 
